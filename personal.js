@@ -21,5 +21,3 @@ if (Meteor.isServer) {
     // code to run on server at startup
   });
 }
-
-// Test
