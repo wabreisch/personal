@@ -1,1 +1,20 @@
 /* APP STYLES */
+
+body {
+  font-family: "Optima", sans-serif;
+  font-size: 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Cochin", serif;
+  text-transform: uppercase;
+}
+
+p {
+  max-width: 768px;
+}
+
+body > nav > div.navbar-collapse.navbar-top.collapse > ul > li.active > a {
+  color: #FFF;
+  background-color: #A3BFFF;
+}
