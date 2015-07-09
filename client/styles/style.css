@@ -14,7 +14,22 @@ p {
   max-width: 768px;
 }
 
+body > nav > div.collapse.navbar-collapse.navbar-top > ul > li > a:hover {
+  background-color: #E2E2E2;
+  color: #000;
+}
+
 body > nav > div.navbar-collapse.navbar-top.collapse > ul > li.active > a {
   color: #FFF;
-  background-color: #A3BFFF;
+  background-color: #002CFF;
+}
+
+.btn {
+  border-radius: 0;
+  border-color: black;
+}
+
+.btn:hover {
+  border-radius: 0;
+  border-color: black;
 }
