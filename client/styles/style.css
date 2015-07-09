@@ -7,6 +7,9 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Cochin", serif;
+}
+
+h1 {
   text-transform: uppercase;
 }
 
@@ -32,4 +35,8 @@ body > nav > div.navbar-collapse.navbar-top.collapse > ul > li.active > a {
 .btn:hover {
   border-radius: 0;
   border-color: black;
+}
+
+.blog-title {
+  color: #CC3300;
 }

@@ -1,0 +1,11 @@
+<template name="blogitem">
+  <div class="container">
+    <div>
+      <h3 class="blog-title">{{title}}</h3>
+      <p class="small">{{created}}</p>
+    </div>
+    <p>
+      {{#markdown}}{{content}}{{/markdown}}
+    </p>
+  </div>
+</template>
