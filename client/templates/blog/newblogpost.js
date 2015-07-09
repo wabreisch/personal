@@ -34,6 +34,12 @@ Template.newBlogPost.events({
       created: new Date()
     };
 
-    // Router.go('blog');
+    Meteor.call('insertBlogPost', blogPost, function (error, result) {
+      if (error) {
+        alert("ERROR");
+      }
+    });
+
+    Router.go('blog');
   }
 });
