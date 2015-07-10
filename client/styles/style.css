@@ -18,13 +18,17 @@ p {
 }
 
 body > nav > div.collapse.navbar-collapse.navbar-top > ul > li > a:hover {
-  background-color: #E2E2E2;
+  background-color: #CCCCCC;
   color: #000;
 }
 
 body > nav > div.navbar-collapse.navbar-top.collapse > ul > li.active > a {
-  color: #FFF;
-  background-color: #002CFF;
+  color: #CC3300;
+  background-color: #E6E6E6;
+}
+
+#submitpost {
+  margin-top: 20px;
 }
 
 .btn {
@@ -35,6 +39,14 @@ body > nav > div.navbar-collapse.navbar-top.collapse > ul > li.active > a {
 .btn:hover {
   border-radius: 0;
   border-color: black;
+}
+
+.blog-item {
+  border-style: solid;
+  border-color: #CCCCCC;
+  border-radius: 0px;
+  border-width: 1px;
+  margin-bottom: 20px;
 }
 
 .blog-title {

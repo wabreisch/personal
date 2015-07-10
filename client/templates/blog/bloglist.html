@@ -1,8 +1,10 @@
 <template name="bloglist">
-  <div class="container">
+  <div class="container-fluid">
     <h1>Blog</h1>
-    {{#each getBlogPosts}}
-      <p>{{> blogitem}}</p>
-    {{/each}}
+      {{#each getBlogPosts}}
+        <div class="blog-item">
+          <p>{{> blogitem}}</p>
+        </div>
+      {{/each}}
   </div>
 </template>
