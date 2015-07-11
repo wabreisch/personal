@@ -1,9 +1,11 @@
 <template name="bloglist">
-  <div class="container-fluid">
+  <div class="container">
     <h1>Blog</h1>
       {{#each getBlogPosts}}
-        <div class="blog-item">
-          <p>{{> blogitem}}</p>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+            <p>{{> blogitem}}</p>
+          </div>
         </div>
       {{/each}}
   </div>

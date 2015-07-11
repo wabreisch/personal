@@ -1,20 +1,17 @@
-/* APP STYLES */
+/* WEBSITE STYLES */
 
 body {
-  font-family: "Optima", sans-serif;
+  font-family: "SFNS Display", sans-serif;
   font-size: 15px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Cochin", serif;
 }
 
 h1 {
   text-transform: uppercase;
+  font-weight: 900;
 }
 
-p {
-  max-width: 768px;
+#main > div > div > div > p > div > p > p {
+  word-wrap: break-word;
 }
 
 body > nav > div.collapse.navbar-collapse.navbar-top > ul > li > a:hover {
@@ -23,8 +20,8 @@ body > nav > div.collapse.navbar-collapse.navbar-top > ul > li > a:hover {
 }
 
 body > nav > div.navbar-collapse.navbar-top.collapse > ul > li.active > a {
-  color: #CC3300;
-  background-color: #E6E6E6;
+  color: #DD5D06;
+  background-color: #CCCCCC;
 }
 
 #submitpost {
@@ -47,8 +44,16 @@ body > nav > div.navbar-collapse.navbar-top.collapse > ul > li.active > a {
   border-radius: 0px;
   border-width: 1px;
   margin-bottom: 20px;
+  max-width: 768px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .blog-title {
-  color: #CC3300;
+  color: #DD5D06;
+}
+
+.blog-date {
+  font-size: 0.75em;
+  color: #808080;
 }
