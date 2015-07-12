@@ -1,0 +1,17 @@
+<template name="editblogitem">
+  <div class="container">
+    <form class="main form page">
+      <div class="form-group">
+        <label class="control-label" for="title">Title</label>
+        <input name="title" id="title" type="text" value="{{title}}" placeholder="Blog Post Title" class="form-control" />
+
+        <label class="control-label" for="content">Content</label>
+        <textarea id="content" name="content" class="form-control" value="{{content}}" rows="12" cols="5" placeholder="Blog Post Content"></textarea>
+
+        <input id="submitpost" type="submit" value="Submit Post" class="btn btn-success"/>
+
+        <input id="deletepost" type="submit" value="Delete Post" class="btn btn-delete"/>
+      </div>
+    </form>
+  </div>
+</template>

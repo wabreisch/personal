@@ -6,6 +6,9 @@
     </div>
     <p>
       {{#markdown}}{{content}}{{/markdown}}
+      {{#if isAdmin}}
+        <a href="{{pathFor 'editblogitem'}}" class="small">Edit</a>
+      {{/if}}
     </p>
   </div>
 </template>

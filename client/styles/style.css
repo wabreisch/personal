@@ -26,6 +26,17 @@ body > nav > div.navbar-collapse.navbar-top.collapse > ul > li.active > a {
 
 #submitpost {
   margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.btn-delete {
+  color: #FFF;
+  background-color: red;
+}
+
+.btn-delete:hover {
+  color: #FFF;
+  background-color: #800000;
 }
 
 .btn {
