@@ -6,7 +6,8 @@ Template.editblogitem.events({
 
     var postProperties = {
       title: $(e.target).find('[name=title]').val(),
-      content: $(e.target).find('[name=content]').val()
+      content: $(e.target).find('[name=content]').val(),
+      lastEdited: Meteor.appFunctions.prettifyDate(new Date())
     };
 
     Meteor.call('updateBlogPost', currentPostId, postProperties);
@@ -18,8 +19,6 @@ Template.editblogitem.events({
 
     if (confirm("Are you sure you want to delete this blog post?")) {
       var currentPostId = this._id;
-      // use a Meteor method to remove the post here
-      //BlogPosts.remove(currentPostId);
       Meteor.call('deleteBlogPost', currentPostId);
       Router.go('bloglist');
     }

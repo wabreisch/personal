@@ -14,6 +14,16 @@ h1 {
   word-wrap: break-word;
 }
 
+#main > div > h2 {
+  text-align: center;
+  font-size: 60px;
+  font-weight: 100;
+}
+
+#main > div > p {
+  text-align: center;
+}
+
 body > nav > div.collapse.navbar-collapse.navbar-top > ul > li > a:hover {
   background-color: #CCCCCC;
   color: #000;
