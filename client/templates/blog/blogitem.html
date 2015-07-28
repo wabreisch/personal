@@ -2,14 +2,14 @@
   <div class="blog-item">
     <div>
       <h3 class="blog-title">{{title}}</h3>
-      <p class="blog-date">Posted: {{prettyDate}}</p>
+      <p class="blog-date">Posted: {{prettyDate created}}</p>
       {{#if lastEdited}}
-        <p class="blog-date">Last Edited: {{lastEdited}}</p>
+        <p class="blog-date">Last Edited: {{prettyDate lastEdited}}</p>
       {{/if}}
     </div>
     <p>
       {{#markdown}}{{content}}{{/markdown}}
-      {{#if isAdmin}}
+      {{#if isInRole 'admin'}}
         <a href="{{pathFor 'editblogitem'}}" class="small">Edit</a>
       {{/if}}
     </p>

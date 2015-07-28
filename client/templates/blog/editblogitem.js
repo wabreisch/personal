@@ -7,7 +7,8 @@ Template.editblogitem.events({
     var postProperties = {
       title: $(e.target).find('[name=title]').val(),
       content: $(e.target).find('[name=content]').val(),
-      lastEdited: Meteor.appFunctions.prettifyDate(new Date())
+      lastEdited: new Date()
+      // lastEdited: Meteor.appFunctions.prettifyDate(new Date())
     };
 
     Meteor.call('updateBlogPost', currentPostId, postProperties);

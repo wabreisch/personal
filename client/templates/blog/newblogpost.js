@@ -15,14 +15,14 @@ Template.newblogpost.events({
       content: $(e.target).find('[name=content]').val(),
       author: Meteor.userId(),
       created: new Date(),
-      prettyDate: date,
+      // prettyDate: date,
       lastEdited: null
     };
 
     Meteor.call('insertBlogPost', blogPost, function (error, result) {
       if (error) {
         // TO DO: implement much better error handling
-        alert("ERROR");
+        alert(error.reason);
       }
     });
 

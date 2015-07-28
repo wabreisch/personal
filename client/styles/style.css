@@ -14,16 +14,6 @@ h1 {
   word-wrap: break-word;
 }
 
-#main > div > h2 {
-  text-align: center;
-  font-size: 60px;
-  font-weight: 100;
-}
-
-#main > div > p {
-  text-align: center;
-}
-
 body > nav > div.collapse.navbar-collapse.navbar-top > ul > li > a:hover {
   background-color: #CCCCCC;
   color: #000;
@@ -77,4 +67,26 @@ body > nav > div.navbar-collapse.navbar-top.collapse > ul > li.active > a {
 .blog-date {
   font-size: 0.75em;
   color: #808080;
+}
+
+#error > p {
+  text-align: center;
+}
+
+#error > h2 {
+  text-align: center;
+  font-size: 60px;
+  font-weight: 100;
+}
+
+.resume {
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  padding: 10px;
+  margin: 20px;
+}
+
+.resume-header {
+  text-align: center;
 }

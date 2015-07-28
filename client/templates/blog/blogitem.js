@@ -1,5 +1,5 @@
 Template.blogitem.helpers({
-  isAdmin: function () {
-      return Meteor.userId() === "PetzzszGt2QW4FiAz";
+  prettyDate: function (date) {
+    return Meteor.appFunctions.prettifyDate(date);
   }
 });
